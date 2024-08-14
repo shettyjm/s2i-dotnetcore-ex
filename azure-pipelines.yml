@@ -20,7 +20,7 @@ stages:
       inputs:
         command: 'build'
         containerRegistry: 'openshift-registry'
-        buildContext: 'App'
+        buildContext: 'app'
         repository: '$(project-name-dev)/$(image-name)'
         Dockerfile: 'Dockerfile'
         tags: $(Build.BuildId)
